@@ -2,120 +2,194 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport"
+      content="width=device-width,
+              initial-scale=1,
+              shrink-to-fit=no">
     <title>feedbookmkr</title>
 
     <link rel="stylesheet" href="bookmark-style.css">
-    
+    <!-- Add additional CSS in static file -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/all.min.css" type="text/css">
+    <!-- Bootstrap core JavaScript -->
+
   </head>
   <body>
-    <div class="title_menu">
-      <h1 class="title">Kerwin Frost</h1>
-      <img src="kerwin.jpg">
-      <p>
-        Kerwin Frost (born July 26, 1995) is a Harlem-born entertainer,
-        DJ, talk show host, and comedian known for his eclectic street
-        style. He first rose to prominence in New York City's Soho Youth
-        streetwear scene, and as the Founder of the Spaghetti Boys, a
-        creative collective known for viral YouTube videos and streetwear
-        collaborations. (Wikipedia)
-        <br><br>
-        <a href="https://www.mrkerwinfrost.com/">Company Website</a>
-        <br><br>
-      </p>
-    </div>
-    <div class="video_menu">
-      <h2>Kerwin Frost Interviews Tyler the Creator</h2>
-      <p>
-        Tyler Gregory Okonma (born March 6, 1991), better
-        known as Tyler, the Creator, is an American rapper,
-        musician, songwriter, producer, actor, and visual artist.
-        He rose to prominence in the early 2010s as the co-founder
-        and de facto leader of alternative hip hop group Odd Future,
-        and has performed on and produced songs for nearly every Odd
-        Future release. (Wikipedia)
-      </p>
-      <div class="video_holder">
-        <iframe class="video" id="viewframe01" width="560"
-            height="315"
-            src="https://www.youtube.com/embed/5_Y8sXeoYrE"
-            frameborder="0"
-            allow="accelerometer; autoplay;
-              encrypted-media; gyroscope;"
-            allowfullscreen>
-          </iframe>
-      </div>
-      <div class="bookmark_menu">
-      <h3>Video Bookmarks</h3>
-      <p>
-        Click on the bookmarks below then press the play button
-        to view the video content.
-      </p>
-        <dl>
-          <dd onclick="bookmark('#viewframe01', '2688')">
-              <span class="bookmark">
-                Tyler talks about a special bracelet.
-              </span>
-          </dd>
-          <dd onclick="bookmark('#viewframe01', '3471')">
-              <span class="bookmark">
-                Tyler talks about his recent car crash.
-              </span>
-          </dd>
-          <dd onclick="bookmark('#viewframe01', '3808')">
-              <span class="bookmark">
-                Tyler talks about his design work.
-              </span>
-          </dd>
-        </dl>
-      </div>
-    </div>
-    <div class="video_menu">
-      <h2>Kerwin Frost Interviews Post Malone</h2>
-      <p>
-        Austin Richard Post (born July 4, 1995), known professionally
-        as Post Malone, is an American rapper, singer, songwriter and
-        record producer. Known for his introspective songwriting and
-        laconic vocal style, Malone has gained acclaim for bending a
-        range of genres including country, grunge, rap and R&B. He
-        first attained recognition in 2015 following the release of
-        his debut single "White Iverson". (Wikipedia)
-      </p>
-      <div class="video_holder">
-        <iframe class="video" id="viewframe02" width="560"
-            height="315"
-            src="https://www.youtube.com/embed/8lC1vOCmiFc"
-            frameborder="0"
-            allow="accelerometer; autoplay;
-              encrypted-media; gyroscope;"
-            allowfullscreen>
-          </iframe>
-      </div>
-      <div class="bookmark_menu">
-      <h3>Video Bookmarks</h3>
-      <p>
-        Click on the bookmarks below then press the play button
-        to view the video content.
-      </p>
-        <dl>
-          <dd onclick="bookmark('#viewframe02', '2589')">
-              <span class="bookmark">
-                Post asks Kerwin about his show.
-              </span>
-          </dd>
-          <dd onclick="bookmark('#viewframe02', '3018')">
-              <span class="bookmark">
-                Kerwin talks about fatherhood and Post talks
-                names for his future son.
-              </span>
-          </dd>
-          <dd onclick="bookmark('#viewframe02', '4038')">
-              <span class="bookmark">
-                Post talks about people covering his songs.
-              </span>
-          </dd>
-        </dl>
-      </div>
-    </div>
+    <section class="page-section" id="title">
+        <div class="row">
+          <div class="col-lg-12 col-lg-4 text-left title-menu">
+            <h1 class="title">James Baldwin</h1>
+            <img src="baldwin.jpg">
+            <p>
+              James Arthur Baldwin (August 2, 1924 - December 1, 1987) was
+              an American novelist, playwright, essayist, poet, and activist.
+              His essays, as collected in Notes of a Native Son (1955), explore
+              intricacies of racial, sexual, and class distinctions in Western
+              society, most notably in regard to the mid-twentieth-century
+              United States. (Wikipedia)
+              <br><br>
+              <a href="https://www.facebook.com/UntitledAndFree/">Facebook Site</a>
+              <br><br>
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="page-section" id="civilrights">
+          <div class="row">
+            <div class="col-lg-12 col-lg-4 text-center section-title">
+              <p>Civil Rights</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-lg-4 text-left video-menu">
+              <h2>James Baldwin Debates William F. Buckley</h2>
+              <p>
+                Historic debate between James Baldwin v. William F. Buckley Jr.
+                at Cambridge University on the question: "Is the American Dream
+                at the expense of the American Negro?"
+              </p>
+              <div class="col-lg-12 col-lg-4 text-left video-holder">
+                  <iframe class="video" id="viewframe01" width="560"
+                      height="315"
+                      src="https://www.youtube.com/embed/oFeoS41xe7w"
+                      frameborder="0"
+                      allow="accelerometer; autoplay;
+                        encrypted-media; gyroscope;"
+                      allowfullscreen>
+                    </iframe>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-lg-4 text-left bookmark-menu">
+              <h5>Video Bookmarks</h5>
+              <p>
+                Click on the bookmarks below then press the play button
+                to view the video content.
+              </p>
+                <dl>
+                  <dd onclick="bookmark('#viewframe01', '1110')">
+                      <span class="bookmark">
+                        Baldwin talks about identity.
+                      </span>
+                  </dd>
+                  <dd onclick="bookmark('#viewframe01', '1635')">
+                      <span class="bookmark">
+                        "The American soil is full of the corpses
+                        of my ancestors."
+                      </span>
+                  </dd>
+                  <dd onclick="bookmark('#viewframe01', '2050')">
+                      <span class="bookmark">
+                        Baldwin talks about political power.
+                      </span>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </section>
+          <section class="page-section" id="civilrights02">
+              <div class="row">
+                <div class="col-lg-12 col-lg-4 text-left video-menu">
+                  <h2>James Baldwin Discusses Racism | The Dick Cavett Show</h2>
+                  <p>
+                    James Baldwin has an open discussion of racial prejudice,
+                    civil rights activism and policing. Date aired - 5/16/1969
+                  </p>
+                  <div class="col-lg-12 col-lg-4 text-left video-holder">
+                      <iframe class="video" id="viewframe02" width="560"
+                          height="315"
+                          src="https://www.youtube.com/embed/WWwOi17WHpE"
+                          frameborder="0"
+                          allow="accelerometer; autoplay;
+                            encrypted-media; gyroscope;"
+                          allowfullscreen>
+                        </iframe>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12 col-lg-4 text-left bookmark-menu">
+                  <h5>Video Bookmarks</h5>
+                  <p>
+                    Click on the bookmarks below then press the play button
+                    to view the video content.
+                  </p>
+                    <dl>
+                      <dd onclick="bookmark('#viewframe02', '282')">
+                          <span class="bookmark">
+                            Baldwin talks about how Black freedom fighters are
+                            routinely oppressed.
+                          </span>
+                      </dd>
+                      <dd onclick="bookmark('#viewframe02', '575')">
+                          <span class="bookmark">
+                            Baldwin talks about the lack of morality and justice
+                            in America.
+                          </span>
+                      </dd>
+                      <dd onclick="bookmark('#viewframe02', '830')">
+                          <span class="bookmark">
+                            Baldwin talks about police oppression.
+                          </span>
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+              </section>
+
+          <section class="page-section" id="literature">
+              <div class="row">
+                <div class="col-lg-12 col-lg-4 text-center section-title">
+                  <p>Literature</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12 col-lg-4 text-left video-menu">
+                  <h2>James Baldwin & Nikki Giovanni, a conversation</h2>
+                  <p>
+                    Original video from SOUL! and then shoutfactorytv.
+                    Taped in London, November 1971.
+                  </p>
+                  <div class="col-lg-12 col-lg-4 text-left video-holder">
+                      <iframe class="video" id="viewframe03" width="560"
+                          height="315"
+                          src="https://www.youtube.com/embed/eZmBy7C9gHQ"
+                          frameborder="0"
+                          allow="accelerometer; autoplay;
+                            encrypted-media; gyroscope;"
+                          allowfullscreen>
+                        </iframe>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12 col-lg-4 text-left bookmark-menu">
+                  <h5>Video Bookmarks</h5>
+                  <p>
+                    Click on the bookmarks below then press the play button
+                    to view the video content.
+                  </p>
+                    <dl>
+                      <dd onclick="bookmark('#viewframe03', '1302')">
+                          <span class="bookmark">
+                            Baldwin talks about police oppression.
+                          </span>
+                      </dd>
+                      <dd onclick="bookmark('#viewframe03', '4839')">
+                          <span class="bookmark">
+                            Baldwin talks about white misunderstanding of Black
+                            culture.
+                          </span>
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+              </section>
+
     <script type="text/javascript">
       function bookmark(target, time) {
         var targetElement;

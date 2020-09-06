@@ -1,6 +1,9 @@
 # Images
 *.jpg
 
+# Static files
+static/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

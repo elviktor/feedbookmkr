@@ -1,6 +1,16 @@
 body {
   background-color: #336699;
   font-family: Roboto, sans-serif;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 0px 50px 50px 50px;
+  background-color: #336699;
+}
+
+img {
+  padding: 25px;
 }
 
 dd {
@@ -15,49 +25,61 @@ dd:hover {
   cursor: pointer;
 }
 
+.spacer {
+    margin-top: 40px; /* define margin as you see fit */
+}
 
-.title_menu {
-  background-color: #336699;
+
+.title-menu {
+  background-color: black;
   padding: 25px;
   color: #eee;
   margin-bottom: 20px;
 }
 
-.title_menu a{
+.title-menu a{
   color:inherit;
   text-decoration: none;
   padding: 5px;
+  background-color: #336699;
+}
+
+.title-menu a:hover{
   background-color: #333;
-}
-
-.title_menu a:hover{
-  background-color: black;
-}
-
-.title_menu img{
-  width: 560px;
-  height: auto;
-}
-
-.video_menu {
-  background-color: #333;
-  padding: 25px;
+  text-decoration: none;
   color: #eee;
-  margin-bottom: 20px;
 }
 
-.video_holder {
+.title-menu img{
+  width: auto;
+  height: 315px;
+}
+
+.section-title p {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #eee;
+}
+
+.video-menu {
+  background-color: #333;
+  padding: 25px 25px 50px 25px;
+  color: #eee;
+}
+
+.video-holder {
   height: 315px !important;
-  width: 560px !important;
+  width: auto !important;
   margin: 50px 0 0 0;
+  background-color: #333;
 }
 
-.video_holder iframe, .video-holder object, .video-holder embed {
+.video-holder iframe, .video-holder object, .video-holder embed {
 	width:100%;
 	height:100%;
 }
 
-.bookmark_menu {
+.bookmark-menu {
   background-color: #eee;
   padding: 25px;
   color: black;
@@ -69,17 +91,32 @@ dd:hover {
 }
 
 @media (max-width: 500px) {
-  .title_menu img{
-    width: 350px;
-    height: auto;
+
+  section {
+    padding: 0px 15px 50px 15px;
   }
 
-  .video_holder {
+  .section-title p {
+    font-size: 2em;
+    font-weight: bold;
+    color: #eee;
+  }
+
+  .title-menu img{
+    height: 225px;
+    width: auto;
+  }
+
+  .video-menu h2{
+    font-size: 1.5em;
+  }
+
+  .video-holder {
     height: 225px !important;
-    width: 400px !important;
+    width: auto !important;
   }
 
-  .video_holder iframe, .video-holder object, .video-holder embed {
+  .video-holder iframe, .video-holder object, .video-holder embed {
   	width:100%;
   	height:100%;
   }
