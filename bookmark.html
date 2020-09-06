@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>feedbookmkr</title>
+
+    <link rel="stylesheet" href="bookmark-style.css">
+    
+  </head>
+  <body>
+    <div class="title_menu">
+      <h1 class="title">Kerwin Frost</h1>
+      <img src="kerwin.jpg">
+      <p>
+        Kerwin Frost (born July 26, 1995) is a Harlem-born entertainer,
+        DJ, talk show host, and comedian known for his eclectic street
+        style. He first rose to prominence in New York City's Soho Youth
+        streetwear scene, and as the Founder of the Spaghetti Boys, a
+        creative collective known for viral YouTube videos and streetwear
+        collaborations. (Wikipedia)
+        <br><br>
+        <a href="https://www.mrkerwinfrost.com/">Company Website</a>
+        <br><br>
+      </p>
+    </div>
+    <div class="video_menu">
+      <h2>Kerwin Frost Interviews Tyler the Creator</h2>
+      <p>
+        Tyler Gregory Okonma (born March 6, 1991), better
+        known as Tyler, the Creator, is an American rapper,
+        musician, songwriter, producer, actor, and visual artist.
+        He rose to prominence in the early 2010s as the co-founder
+        and de facto leader of alternative hip hop group Odd Future,
+        and has performed on and produced songs for nearly every Odd
+        Future release. (Wikipedia)
+      </p>
+      <div class="video_holder">
+        <iframe class="video" id="viewframe01" width="560"
+            height="315"
+            src="https://www.youtube.com/embed/5_Y8sXeoYrE"
+            frameborder="0"
+            allow="accelerometer; autoplay;
+              encrypted-media; gyroscope;"
+            allowfullscreen>
+          </iframe>
+      </div>
+      <div class="bookmark_menu">
+      <h3>Video Bookmarks</h3>
+      <p>
+        Click on the bookmarks below then press the play button
+        to view the video content.
+      </p>
+        <dl>
+          <dd onclick="bookmark('#viewframe01', '2688')">
+              <span class="bookmark">
+                Tyler talks about a special bracelet.
+              </span>
+          </dd>
+          <dd onclick="bookmark('#viewframe01', '3471')">
+              <span class="bookmark">
+                Tyler talks about his recent car crash.
+              </span>
+          </dd>
+          <dd onclick="bookmark('#viewframe01', '3808')">
+              <span class="bookmark">
+                Tyler talks about his design work.
+              </span>
+          </dd>
+        </dl>
+      </div>
+    </div>
+    <div class="video_menu">
+      <h2>Kerwin Frost Interviews Post Malone</h2>
+      <p>
+        Austin Richard Post (born July 4, 1995), known professionally
+        as Post Malone, is an American rapper, singer, songwriter and
+        record producer. Known for his introspective songwriting and
+        laconic vocal style, Malone has gained acclaim for bending a
+        range of genres including country, grunge, rap and R&B. He
+        first attained recognition in 2015 following the release of
+        his debut single "White Iverson". (Wikipedia)
+      </p>
+      <div class="video_holder">
+        <iframe class="video" id="viewframe02" width="560"
+            height="315"
+            src="https://www.youtube.com/embed/8lC1vOCmiFc"
+            frameborder="0"
+            allow="accelerometer; autoplay;
+              encrypted-media; gyroscope;"
+            allowfullscreen>
+          </iframe>
+      </div>
+      <div class="bookmark_menu">
+      <h3>Video Bookmarks</h3>
+      <p>
+        Click on the bookmarks below then press the play button
+        to view the video content.
+      </p>
+        <dl>
+          <dd onclick="bookmark('#viewframe02', '2589')">
+              <span class="bookmark">
+                Post asks Kerwin about his show.
+              </span>
+          </dd>
+          <dd onclick="bookmark('#viewframe02', '3018')">
+              <span class="bookmark">
+                Kerwin talks about fatherhood and Post talks
+                names for his future son.
+              </span>
+          </dd>
+          <dd onclick="bookmark('#viewframe02', '4038')">
+              <span class="bookmark">
+                Post talks about people covering his songs.
+              </span>
+          </dd>
+        </dl>
+      </div>
+    </div>
+    <script type="text/javascript">
+      function bookmark(target, time) {
+        var targetElement;
+        var srcComplete;
+        var src;
+        var srcTrim;
+        var testPatt;
+        var testResult;
+        var patt;
+
+        targetElement = document.querySelector(target);
+        src = targetElement.getAttribute("src");
+
+        testPatt = ".*start=";
+        testResult = src.search(testPatt);
+
+        if (testResult != -1) {
+          patt = ".*start=";
+          srcTrim = src.match(patt);
+          srcComplete = srcTrim[0] + time;// + "?&autoplay=1";
+          console.log(srcComplete);
+          targetElement.setAttribute("src", srcComplete);
+        } else {
+            srcComplete = src + "?start=" + time;// + "?&autoplay=1";
+            console.log(srcComplete);
+            targetElement.setAttribute("src", srcComplete);
+        }
+
+      }
+    </script>
+  </body>
+</html>
